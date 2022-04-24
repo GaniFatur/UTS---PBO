@@ -36,7 +36,7 @@ public class Student {
 
     @NotEmpty(message = "Email is required")
     @Email
-    @Column(nullable = false, name = "email", unique = true)
+    @Column(nullable = false, name = "email")
     private String email;
 
     @NotEmpty(message = "Hari number is required")
