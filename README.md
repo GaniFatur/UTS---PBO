@@ -44,3 +44,36 @@ Edit Data
 
 Remove Data
 ![Remove Data List](img/img-heroku/remove-1data.png "Remove Data List")
+
+### Image Screenshoot (local)
+Sign-up
+![signup](img/img-local/reg1.png "sign-up")
+![signup](img/img-local/reg2.png "sign-up")
+
+Login Screen 
+![login](img/img-local/Login.png "login")
+
+List Tugas
+![list](img/img-local/index.png "list")
+
+Creating New List
+![create](img/img-local/create.png "create")
+
+Editing List
+![edit](img/img-local/edit.png "edit")
+
+Deleting List
+![delete](img/img-local/delete.png "delete")
+
+Log-out
+![logout](img/img-local/logout.png "logout")
+
+Forgot Password
+![forgot](img/img-local/forgot1.png "forgot")
+![forgot](img/img-local/forgot2.png "forgot")
+
+Email Confirmation
+![email](img/img-local/email.png "confirmation")
+
+Resetting Password
+![reset](img/img-local/reset.png "reset")
