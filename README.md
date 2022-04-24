@@ -1,10 +1,10 @@
-First Please create acc here :
+First please create acc here :
 https://list-tugas.herokuapp.com/signup
 
 If you forgot password klik link :
 https://list-tugas.herokuapp.com/forgot-password
 
-### Image Screen shot
+### Image Screen shot (heroku)
 
 Sign Up Page
 
