@@ -43,7 +43,7 @@ public class StudentController{
                 .orElseThrow(() -> new StudentNotFoundException("Student with " + id + " is Not Found!"));
         student.setCourse(newStd.getCourse());
         student.setTask(newStd.getTask());
-//        student.setEmail(newStd.getEmail());
+        student.setEmail(newStd.getEmail());
         student.setHari(newStd.getHari());
         return studentservice.save(student);
     }

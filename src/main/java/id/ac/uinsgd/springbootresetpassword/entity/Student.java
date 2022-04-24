@@ -34,9 +34,9 @@ public class Student {
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate deadlineDate;
 
-    @NotEmpty(message = "Email is required")
+    @NotEmpty(message = "Email Dosen is required")
     @Email
-    @Column(nullable = false, name = "email")
+    @Column(nullable = false, name = "email", unique = true)
     private String email;
 
     @NotEmpty(message = "Hari number is required")
