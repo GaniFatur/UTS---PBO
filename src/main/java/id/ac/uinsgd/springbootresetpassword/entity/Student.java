@@ -19,33 +19,32 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotEmpty(message = "First name is required")
-    @NotNull(message = "FirstName can not be null!!")
-    @Column(nullable = false, name = "first_Name")
-    private String firstName;
+    @NotEmpty(message = "Mata kuliah is required")
+    @NotNull(message = "Mata kuliah can not be null!!")
+    @Column(nullable = false, name = "course")
+    private String course;
 
-    @NotEmpty(message = "Last name is required")
-    @NotNull(message = "LastName can not be null!!")
-    @Column(nullable = false, name = "last_name")
-    private String lastName;
+    @NotEmpty(message = "Tugas is required")
+    @NotNull(message = "Tugas can not be null!!")
+    @Column(nullable = false, name = "Tugas")
+    private String task;
     
-    @NotNull(message="Please enter birth date")
-    @Past(message="Birth date should be less than current date!!")
+    @NotNull(message="Please enter deadline date")
+    @FutureOrPresent(message="Deadline date should be least than current date!!")
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    private LocalDate birthDate;
+    private LocalDate deadlineDate;
 
     @NotEmpty(message = "Email is required")
     @Email
     @Column(nullable = false, name = "email", unique = true)
     private String email;
 
-    @NotEmpty(message = "Phone number is required")
-    @NotNull(message="Phone can not be null!")
-    @Size(max=15, min=10, message = "Mobile number should be of 10 digits!")
-    @Column(nullable = false, unique = true)
-    private String phone;
+    @NotEmpty(message = "Hari number is required")
+    @NotNull(message="Hari can not be null!")
+    @Column(nullable = false)
+    private String hari;
 
-    @NotEmpty(message = "Jurusan is required")
+    @NotEmpty(message = "Pengumpulan is required")
     @Column(nullable=false)
-    private String jurusan;
+    private String pengumpulan;
 }

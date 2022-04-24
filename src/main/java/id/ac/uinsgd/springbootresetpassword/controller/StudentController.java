@@ -41,10 +41,10 @@ public class StudentController{
     public Student updateStudent(@PathVariable("id") @Min(1) Long id, @Valid @RequestBody Student newStd){
         Student student = studentservice.findById(id)
                 .orElseThrow(() -> new StudentNotFoundException("Student with " + id + " is Not Found!"));
-        student.setFirstName(newStd.getFirstName());
-        student.setLastName(newStd.getLastName());
+        student.setCourse(newStd.getCourse());
+        student.setTask(newStd.getTask());
         student.setEmail(newStd.getEmail());
-        student.setPhone(newStd.getPhone());
+        student.setHari(newStd.getHari());
         return studentservice.save(student);
     }
 

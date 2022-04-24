@@ -17,7 +17,7 @@
 <body>
 
 <div class="container">
-    <h2>Form Student</h2>
+    <h2>List Tugas</h2>
 </div>
 
 <div class="container">
@@ -28,23 +28,23 @@
                 <input th:field="*{id}" type="hidden"/>
 
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">Nama Depan:</label>
-                    <div class="col-sm-8">
-                        <input class="form-control" th:field="*{firstName}" type="text" id="firstName" placeholder="Nama Depan" required>
+                    <label class="col-sm-4 control-label">Mata Kuliah:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" th:field="*{course}" type="text" id="course" placeholder="Mata Kuliah" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-4 control-label">Nama Belakang:</label>
+                    <label class="col-sm-4 control-label">Tugas:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{lastName}" type="text" id="lastName" placeholder="Nama Belakang" required>
+                        <input class="form-control" th:field="*{task}" type="text" id="task" placeholder="Tugas" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Tanggal Lahir:</label>
+                    <label class="col-sm-2 control-label">Tanggal Deadline:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" id="birthDate" required th:field="*{birthDate}" type="date">
+                        <input class="form-control" id="deadlineDate" required th:field="*{deadlineDate}" type="date">
                     </div>
                 </div>
 
@@ -56,22 +56,22 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Phone:</label>
+                    <label class="col-sm-2 control-label">Hari:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{phone}" type="text" id="phone" placeholder="Nomor telepon" required>
+                        <input class="form-control" th:field="*{hari}" type="text" id="hari" placeholder="Hari" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Jurusan:</label>
+                    <label class="col-sm-2 control-label">Pengumpulan:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" th:field="*{jurusan}" type="text" id="jurusan" placeholder="Nomor Jurusan" required>
+                        <input class="form-control" th:field="*{pengumpulan}" type="text" id="pegumpulan" placeholder="Pengumpulan" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <input class="btn btn-success" type="submit" value="Save">
-                    <a class="btn btn-danger" role="button" th:href="@{/}">Back</a>
+                    <a class="btn btn-danger" role="button" th:href="@{/index}">Back</a>
                 </div>
             </form>
         </div>
