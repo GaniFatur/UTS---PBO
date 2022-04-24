@@ -2,9 +2,9 @@ server:
   port: 8082
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/student
-    username: postgre
-    password: Indrinf3110
+    url: jdbc:postgresql://ec2-3-225-213-67.compute-1.amazonaws.com:5432/d83m9uc17b9tdm
+    username: oixvrzjpwlsije
+    password: 0617758846cdab6b395a592ff6824bf92e6c3263ca3132fa38bedcd0db4ea18c
   jpa:
     hibernate:
       ddl-auto: update
